@@ -152,6 +152,14 @@ graph TD
 
 ---
 
+## Image demo
+
+![Dashboard Screenshot](https://github.com/SanthoshkumarSundararaj/E-commerce-greenkaufen/blob/main/images/screen_1.png)
+
+![Dashboard Screenshot](https://github.com/SanthoshkumarSundararaj/E-commerce-greenkaufen/blob/main/images/screen_2.png)
+
+![Dashboard Screenshot](https://github.com/SanthoshkumarSundararaj/E-commerce-greenkaufen/blob/main/images/screen_3.png)
+
 ## 📄 Sponsor
 This project is sponsored by Greenkaufen GmbH
 
