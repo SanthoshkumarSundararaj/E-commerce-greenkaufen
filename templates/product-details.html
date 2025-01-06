@@ -1,0 +1,734 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green Kaufen </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/greenkaufen_logo.png') }}">
+
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.awesome.css') }}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slinky.menu.css') }}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--modernizr min js here-->
+    <script src="/static/js/modernizr-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--header area start-->
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                        </div>
+                        <div class="welcome-text">
+                            <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                        </div>
+                        <div class="language_currency text-center">
+                            <ul>
+                                
+                                <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a href="#">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            <form action="#">
+                                
+                                <div class="search_box">
+                                    <input placeholder="Search product..." type="text">
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="call-support">
+                            <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a class="active" href="/">home</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/shop?item=all">Shop </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/shop?item=all">All Products</a></li>
+                                            <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                            <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                            
+                                        </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a class="" href="/about">about us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/blog">blog</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/contact"> Contact Us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/bulkenquiry">Bulk Enquiry</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@greenkaufen.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-5">
+                            
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="welcome-text">
+                                <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="language_currency text-right">
+                                <ul>
+                                    
+                                    <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_language">
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="logo">
+                                <a href="/"><img src="/static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-6">
+                            <div class="header_right_info">
+                                <div class="search_container">
+                                    <form action="#">
+                                        
+                                        <div class="search_box">
+                                            <input placeholder="Search product..." type="text">
+                                            <button type="submit"><i class="icon-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="header_account_area">
+                                    <div class="header_account-list top_links">
+                                        <a href="#"><i class="icon-users"></i></a>
+                                        <ul class="dropdown_links">
+                                            <li><a href="#">Checkout </a></li>
+                                        <li><a href="/myaccount">My Account </a></li>
+                                        <li><a href="/cart">Shopping Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_account-list header_wishlist">
+                                        <a href="/wishlist"><i class="icon-heart"></i></a>
+                                    </div>
+                                    <div class="header_account-list  mini_cart_wrapper">
+                                        <a href="/cart"><i class="icon-shopping-bag"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            
+                        </div>
+                        <div class="col-lg-6">
+                            <!--main menu start-->
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="" href="/">home</a>
+                                        </li>
+                                        <li><a class="active" href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="" href="/about">about us</a>
+                                        </li>
+                                        <li><a href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="call-support">
+                                <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header area end-->
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>Shop</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>product details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!--product details start-->
+    <div class="product_details mt-100 mb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product-details-tab">
+                        <div id="img-1" class="zoomWrapper single-zoom">
+                            <a href="#">
+                                <img id="zoom1" src="{{ product.image_1 }}"
+                                    data-zoom-image="{{ product.image_1 }}" alt="big-2">
+                            </a>
+                        </div>
+                        <div class="single-zoom-thumb">
+                            <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
+                                <li>
+                                    <a href="#" class="elevatezoom-gallery active" data-update=""
+                                        data-image="{{ product.image_2 }}"
+                                        data-zoom-image="{{ product.image_2 }}">
+                                        <img src="{{ product.image_2 }}" alt="zo-th-1" />
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="elevatezoom-gallery active" data-update=""
+                                        data-image="{{ product.image_3 }}"
+                                        data-zoom-image="{{ product.image_3 }}">
+                                        <img src="{{ product.image_3 }}" alt="zo-th-1" />
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="elevatezoom-gallery active" data-update=""
+                                        data-image="{{ product.image_4 }}"
+                                        data-zoom-image="{{ product.image_4 }}">
+                                        <img src="{{ product.image_4 }}" alt="zo-th-1" />
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="elevatezoom-gallery active" data-update=""
+                                        data-image="{{ product.image_1 }}"
+                                        data-zoom-image="{{ product.image_1 }}">
+                                        <img src="{{ product.image_1 }}" alt="zo-th-1" />
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product_d_right">
+                        <form action="/add_to_cart" method="post" onsubmit="return validateForm()">
+
+                            <h1>{{ product.name }}</h1>
+                            <input type="hidden" id="hidden_field" name="product_id" value="{{ product.id }}">
+                            <!-- <div class="product_nav">
+                                <ul>
+                                    <li class="prev"><a href="product-details.html"><i class="fa fa-angle-left"></i></a>
+                                    </li>
+                                    <li class="next"><a href="variable-product.html"><i
+                                                class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </div> -->
+                            <div class=" product_ratting">
+                                <ul>
+                                    <li><i class="fa fa-star fa-lg" style="color: orangered;"></i></a></li>
+                                    <li><i class="fa fa-star fa-lg" style="color: orangered;"></i></a></li>
+                                    <li><i class="fa fa-star fa-lg" style="color: orangered;"></i></a></li>
+                                    <li><i class="fa fa-star fa-lg" style="color: orangered;"></i></a></li>
+                                    <li><i class="fa fa-star fa-lg" style="color: orangered;"></i></a></li>
+                                    <li class="review"> (customer review ) </li>
+                                </ul>
+
+                            </div>
+                            <div class="price_box">
+                                <span class="current_price">€ {{ product.start_price }} - € {{ product.end_price }}</span>
+                                <!-- <span class="old_price">£80.00</span> -->
+
+                            </div>
+                            <div class="product_desc">
+                                <p>{{ product.info }}</p>
+                            </div>
+                            <label><h4>Quantity</h4></label>
+                            <br>
+                            <select id="productSelect" name="quantity" class="form-select" onchange="updatePrice()" required>
+                                <option selected>Choose an option</option>
+                                <option value="{{ product.quantity_1 }}">{{ product.quantity_1 }} stuck</option>
+                                <option value="{{ product.quantity_2 }}">{{ product.quantity_2 }} stuck</option>
+                            </select>
+                            <br>
+
+
+                            <div class="price_box">
+                                <span class="current_price">€ </span> <span class="current_price" id="priceParagraph"></span>
+                                <!-- <span class="old_price">£80.00</span> -->
+
+                            </div>
+                            <span ></span>
+                            
+                            <div class="product_variant quantity">
+                                
+                                <input min="1" max="100" value="1" type="number" name="number">
+                                <button class="button" type="submit">add to cart</button>
+
+                            </div>
+
+
+
+                            <div class=" product_d_action">
+                                <ul>
+                                    <li><a href="#" title="Add to wishlist">+ Add to Wishlist</a></li>
+                                </ul>
+                            </div>
+                            <div class="product_meta">
+                                <span>Category: Palm Leaf</span>
+                            </div>
+
+                        </form>
+                        <!-- <div class="priduct_social">
+                            <ul>
+                                <li><a class="facebook" href="#" title="facebook"><i class="fa fa-facebook"></i>
+                                        Like</a></li>
+                                <li><a class="twitter" href="#" title="twitter"><i class="fa fa-twitter"></i> tweet</a>
+                                </li>
+                                <li><a class="pinterest" href="#" title="pinterest"><i class="fa fa-pinterest"></i>
+                                        save</a></li>
+                                <li><a class="google-plus" href="#" title="google +"><i class="fa fa-google-plus"></i>
+                                        share</a></li>
+                                <li><a class="linkedin" href="#" title="linkedin"><i class="fa fa-linkedin"></i>
+                                        linked</a></li>
+                            </ul>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--product details end-->
+
+    <!--product info start-->
+    <div class="product_d_info mb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="product_d_inner">
+                        <div class="product_info_button">
+                            <ul class="nav" role="tablist" id="nav-tab">
+                                <li>
+                                    <a class="active" data-bs-toggle="tab" href="#info" role="tab" aria-controls="info"
+                                        aria-selected="false">Key Features</a>
+                                </li>
+                                <li>
+                                    <a data-bs-toggle="tab" href="#sheet" role="tab" aria-controls="sheet"
+                                        aria-selected="false">Specification</a>
+                                </li>
+                                <li>
+                                    <a data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
+                                        aria-selected="false">Benefits</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="info" role="tabpanel">
+                                <div class="product_info_content">
+                                    <h4>{{ product.key_head_1 }}</h4><p>{{ product.key_para_1 }}</p>
+                                    <h4>{{ product.key_head_2 }}</h4><p>{{ product.key_para_2 }}</p>
+                                    <h4>{{ product.key_head_3 }}</h4><p>{{ product.key_para_3 }}</p>
+                                    <h4>{{ product.key_head_4 }}</h4><p>{{ product.key_para_4 }}</p>
+                                    <h4>{{ product.key_head_5 }}</h4><p>{{ product.key_para_5 }}</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="sheet" role="tabpanel">
+                                <div class="product_d_table">
+                                    <form action="#">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="first_child">Dimensions</td>
+                                                    <td>{{ product.dim }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first_child">Material</td>
+                                                    <td>{{ product.material }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first_child">Pack Size</td>
+                                                    <td>{{ product.pack }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first_child">Usage</td>
+                                                    <td>{{ product.usage }}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </div>
+                                
+                            </div>
+
+                            <div class="tab-pane fade" id="reviews" role="tabpanel">
+                                <div class="product_info_content">
+                                    <h4>{{ product.ben_head_1 }}</h4><p>{{ product.ben_para_1 }}</p>
+                                    <h4>{{ product.ben_head_2 }}</h4><p>{{ product.ben_para_2 }}</p>
+                                    <h4>{{ product.ben_head_3 }}</h4><p>{{ product.ben_para_3 }}</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--product info end-->
+
+    <!--product area start-->
+    <section class="product_area related_products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title">
+                        <h2>Related Products </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product_carousel product_column4 owl-carousel">
+                    {% for key in related_product %}
+                    <div class="col-lg-3">
+                        <article class="single_product">
+                            <figure>
+                                <div class="product_thumb">
+                                    <a class="primary_img" href="/product/{{ key.id }}"><img
+                                        src="{{ key.image_1 }}" alt=""></a>
+                                    <div class="label_product">
+                                        <span class="label_sale">sale</span>
+                                    </div>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li class="wishlist"><a href="/add_to_wishlist/{{ key.id }}"
+                                                    title="Add to Wishlist"><i class="icon-heart"></i></a></li>
+                                            <li class="quick_button"><a href="/product/{{ key.id }}" > <i
+                                                        class="icon-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <figcaption class="product_content">
+                                    <h4 class="product_name"><a href="/product/{{ key.id }}">{{ key.name }}</a></h4>
+                                            <div class="price_box">
+                                                <span class="current_price">€ {{ key.start_price }} - € {{ key.end_price }}</span>
+                                                <!-- <span class="old_price">£74.00</span> -->
+                                            </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--product area end-->
+
+    
+
+    <!--shipping area start-->
+    <div class="shipping_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_shipping">
+                        <div class="shipping_icone">
+                            <img src="/static/img/home_mini/delivery_small.png" alt="">
+                        </div>
+                        <div class="shipping_content">
+                            <h3>Fast Delivery</h3>
+                            <p>Free shipping around the world for all <br> orders over $120</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_shipping col_2">
+                        <div class="shipping_icone">
+                            <img src="/static/img/home_mini/payment.png" alt="">
+                        </div>
+                        <div class="shipping_content">
+                            <h3>Safe Payment</h3>
+                            <p>With our payment gateway, don’t worry <br> about your information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_shipping col_3">
+                        <div class="shipping_icone">
+                            <img src="/static/img/home_mini/service.png" alt="">
+                        </div>
+                        <div class="shipping_content">
+                            <h3>Friendly Services</h3>
+                            <p>You have 30-day return guarantee for <br> every single order</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--shipping area end-->
+
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container contact_us">
+                            <h3>Address</h3>
+                            <p><span>GreenKaufen</span> GmbH, Hennef <span> <br>53773,</span> Germany</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Information</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="widgets_container widget_app">
+                            <div class="footer_logo">
+                                <a href="/"><img src="/static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                            
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090579331886"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/greenkaufen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/91609196/admin/feed/posts/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="footer_app">
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/icon/icon-app.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/icon/icon1-app.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>My Account</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/myaccount">My Account</a></li>
+                                    <li><a href="/cart">Shopping cart</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                    <li><a href="/shop?item=all">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Customer Service</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/faq">FAQ</a></li>
+                                    <li><a href="/terms">Terms and Conditions</a></li>
+                                    <li><a href="/privacy">Disclaimer & Privacy</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="/impressum">Impressum</a></li>
+                                    <li><a href="#">Shipping Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p class="copyright-text">&copy; 2024 <a href="/">Green Kaufen</a>. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_payment">
+                            <a href="#"><img src="assets/img/icon/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+    
+    <script>
+        function updatePrice() {
+            var select = document.getElementById("productSelect");
+            var priceParagraph = document.getElementById("priceParagraph");
+            var selectedValue = select.value;
+
+            if (selectedValue == "{{ product.quantity_1 }}") {
+                priceParagraph.textContent = "{{ product.start_price }}";
+            } else if (selectedValue == "{{ product.quantity_2 }}") {
+                priceParagraph.textContent = "{{ product.end_price }}";
+            } else {
+                priceParagraph.textContent = "";
+            }
+        }
+        function validateForm() {
+            var productSelect = document.getElementById("productSelect");
+            if (productSelect.value === "Choose an option") {
+                alert("Please select a valid quantity option.");
+                return false;
+            }
+            return true;
+        }
+
+        
+    </script>
+
+
+    <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="/static/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="/static/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="/static/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="/static/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="/static/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="/static/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="/static/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="/static/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="/static/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/js/main.js"></script>
+
+
+
+</body>
+
+</html>

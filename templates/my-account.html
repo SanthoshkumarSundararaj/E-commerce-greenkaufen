@@ -1,0 +1,652 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green Kaufen </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/greenkaufen_logo.png') }}">
+
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.awesome.css') }}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slinky.menu.css') }}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--modernizr min js here-->
+    <script src="/static/js/modernizr-3.7.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!--header area start-->
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                        </div>
+                        <div class="welcome-text">
+                            <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                        </div>
+                        <div class="language_currency text-center">
+                            <ul>
+                                
+                                <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a href="#">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            <form action="#">
+                                
+                                <div class="search_box">
+                                    <input placeholder="Search product..." type="text">
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="call-support">
+                            <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a class="active" href="/">home</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/shop?item=all">Shop </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/shop?item=all">All Products</a></li>
+                                            <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                            <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                            
+                                        </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a class="" href="/about">about us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/blog">blog</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/contact"> Contact Us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/bulkenquiry">Bulk Enquiry</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@greenkaufen.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-5">
+                            
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="welcome-text">
+                                <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="language_currency text-right">
+                                <ul>
+                                    
+                                    <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_language">
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-6">
+                            <div class="header_right_info">
+                                <div class="search_container">
+                                    <form action="#">
+                                        
+                                        <div class="search_box">
+                                            <input placeholder="Search product..." type="text">
+                                            <button type="submit"><i class="icon-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="header_account_area">
+                                    <div class="header_account-list top_links">
+                                        <a href="#"><i class="icon-users"></i></a>
+                                        <ul class="dropdown_links">
+                                            <li><a href="#">Checkout </a></li>
+                                        <li><a href="/myaccount">My Account </a></li>
+                                        <li><a href="/cart">Shopping Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_account-list header_wishlist">
+                                        <a href="/wishlist"><i class="icon-heart"></i></a>
+                                    </div>
+                                    <div class="header_account-list  mini_cart_wrapper">
+                                        <a href="/cart"><i class="icon-shopping-bag"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            
+                        </div>
+                        <div class="col-lg-6">
+                            <!--main menu start-->
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="" href="/">home</a>
+                                        </li>
+                                        <li><a href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="active" href="/about">about us</a>
+                                        </li>
+                                        <li><a href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="call-support">
+                                <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header area end-->
+
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>My Account</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>My account</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!-- my account start  -->
+    <section class="main_content_area">
+        <div class="container">
+            <div class="account_dashboard">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <!-- Nav tabs -->
+                        <div class="dashboard_tab_button">
+                            <ul role="tablist" class="nav flex-column dashboard-list">
+                                <li><a href="#dashboard" data-bs-toggle="tab" class="nav-link active">Dashboard</a></li>
+                                <li> <a href="#orders" data-bs-toggle="tab" class="nav-link">Orders</a></li>
+                                <li><a href="#downloads" data-bs-toggle="tab" class="nav-link">Downloads</a></li>
+                                <li><a href="#address" data-bs-toggle="tab" class="nav-link">Addresses</a></li>
+                                <li><a href="#account-details" data-bs-toggle="tab" class="nav-link">Account details</a>
+                                </li>
+                                <li><a href="/logout" class="nav-link">logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-9 col-lg-9">
+                        <!-- Tab panes -->
+                        <div class="tab-content dashboard_content">
+                            <div class="tab-pane fade show active" id="dashboard">
+                                <h3>Dashboard </h3>
+                                <p>From your account dashboard. you can easily check &amp; view your <a href="#">recent
+                                        orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a
+                                        href="#">Edit your password and account details.</a></p>
+                            </div>
+                            <div class="tab-pane fade" id="orders">
+                                <h3>Orders</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Order</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Total</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>May 10, 2018</td>
+                                                <td><span class="success">Completed</span></td>
+                                                <td>$25.00 for 1 item </td>
+                                                <td><a href="cart.html" class="view">view</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>May 10, 2018</td>
+                                                <td>Processing</td>
+                                                <td>$17.00 for 1 item </td>
+                                                <td><a href="cart.html" class="view">view</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="downloads">
+                                <h3>Downloads</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Downloads</th>
+                                                <th>Expires</th>
+                                                <th>Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Shopnovilla - Free Real Estate PSD Template</td>
+                                                <td>May 10, 2018</td>
+                                                <td><span class="danger">Expired</span></td>
+                                                <td><a href="#" class="view">Click Here To Download Your File</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Organic - ecommerce html template</td>
+                                                <td>Sep 11, 2018</td>
+                                                <td>Never</td>
+                                                <td><a href="#" class="view">Click Here To Download Your File</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="address">
+                                <p>The following addresses will be used on the checkout page by default.</p>
+                                <h4 class="billing-address">Billing address</h4>
+                                
+                                    <div class="login">
+                                        <div class="login_form_container">
+                                            <div class="account_login_form">
+                                                <form id="updateAddressForm">
+                                                <label>Billing Name</label>
+                                                <input type="text" name="billing_name" value="{{billing.billing_name}}">
+                                                <label>Street name and number</label>
+                                                <input type="text" name="street" value="{{billing.street}}">
+                                                <label>ZIP or postal code</label>
+                                                <input type="text" name="postal" value="{{billing.postal}}">
+                                                <label>City</label>
+                                                <input type="text" name="city" value="{{billing.city}}">
+                                                <br>
+                                                <div class="save_button primary_btn default_button">
+                                                    <button type="submit">Save</button>
+                                                </div>
+                                            </form>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                
+                            </div>
+                            <div class="tab-pane fade" id="account-details">
+                                <h3>Account details </h3>
+                                <div class="login">
+                                    <div class="login_form_container">
+                                        <div class="account_login_form">
+                                            <form id="updateForm">
+                                                
+                                                <div class="input-radio">
+                                                    <span class="custom-radio"><input type="radio" value="1"
+                                                            name="id_gender"> Mr.</span>
+                                                    <span class="custom-radio"><input type="radio" value="1"
+                                                            name="id_gender"> Mrs.</span>
+                                                </div> <br>
+                                                <label>First Name</label>
+                                                <input type="text" name="first_name" value="{{profile.first_name}}">
+                                                <label>Last Name</label>
+                                                <input type="text" name="last_name" value="{{profile.last_name}}">
+                                                <label>Email</label>
+                                                <input type="text" name="email" value="{{email}}">
+                                                <label>Password</label>
+                                                <!-- <div class="password-container">
+                                                    <input type="password" name="password" id="password" value="{{password}}">
+                                                    <button type="button" id="togglePassword" class="toggle-password">
+                                                        Show
+                                                    </button>
+                                                </div> -->
+                                                <label>Birthdate</label>
+                                                <input type="text" placeholder="MM/DD/YYYY" value="{{profile.birthdate}}" name="birthdate">
+                                                <span class="example">
+                                                    (E.g.: 05/31/1970)
+                                                </span>
+                                                <br>
+                                                <span class="custom_checkbox">
+                                                    <input type="checkbox" value="1" name="newsletter">
+                                                    <label>Sign up for our newsletter<br><em>You may unsubscribe at any
+                                                            moment. For that purpose, please find our contact info in
+                                                            the legal notice.</em></label>
+                                                </span>
+                                                <div class="save_button primary_btn default_button">
+                                                    <button type="submit">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- my account end   -->
+
+   
+
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container contact_us">
+                            <h3>Address</h3>
+                            <p><span>GreenKaufen</span> GmbH, Hennef <span> <br>53773,</span> Germany</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Information</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="widgets_container widget_app">
+                            <div class="footer_logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                            
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090579331886"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/greenkaufen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/91609196/admin/feed/posts/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="footer_app">
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/icon/icon-app.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/icon/icon1-app.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>My Account</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/myaccount">My Account</a></li>
+                                    <li><a href="/cart">Shopping cart</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                    <li><a href="/shop?item=all">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Customer Service</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/faq">FAQ</a></li>
+                                    <li><a href="/terms">Terms and Conditions</a></li>
+                                    <li><a href="/privacy">Disclaimer & Privacy</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="/impressum">Impressum</a></li>
+                                    <li><a href="#">Shipping Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p class="copyright-text">&copy; 2024 <a href="/">Green Kaufen</a>. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_payment">
+                            <a href="#"><img src="assets/img/icon/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+    <style>
+        .password-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        #password {
+            padding-right: 60px; /* Space for the toggle button */
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const togglePassword = document.getElementById('togglePassword');
+            const password = document.getElementById('password');
+
+            togglePassword.addEventListener('click', function () {
+                // Toggle the type attribute
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+
+                // Toggle the text
+                this.textContent = type === 'password' ? 'Show' : 'Hide';
+            });
+        });
+
+        document.getElementById('updateForm').addEventListener('submit', async function(event) {
+            event.preventDefault();  // Prevent default form submission
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            const response = await fetch('/updateuser', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                },
+                body: formData
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                alert(result.message);
+            } else {
+                alert('Failed to update user billing information.');
+            }
+        });
+
+        document.getElementById('updateAddressForm').addEventListener('submit', async function(event) {
+            event.preventDefault();  // Prevent default form submission
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            const response = await fetch('/updateaddress', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                },
+                body: formData
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                alert(result.message);
+            } else {
+                alert('Failed to update billing information.');
+            }
+        });
+    </script>
+
+     <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="/static/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="/static/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="/static/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="/static/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="/static/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="/static/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="/static/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="/static/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="/static/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>

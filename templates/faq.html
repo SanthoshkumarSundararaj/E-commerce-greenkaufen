@@ -1,0 +1,689 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green Kaufen </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/greenkaufen_logo.png') }}">
+
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.awesome.css') }}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slinky.menu.css') }}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--modernizr min js here-->
+    <script src="/static/js/modernizr-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--header area start-->
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                        </div>
+                        <div class="welcome-text">
+                            <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                        </div>
+                        <div class="language_currency text-center">
+                            <ul>
+                                
+                                <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a href="#">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            <form action="#">
+                                
+                                <div class="search_box">
+                                    <input placeholder="Search product..." type="text">
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="call-support">
+                            <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a class="active" href="/">home</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/shop?item=all">Shop </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/shop?item=all">All Products</a></li>
+                                            <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                            <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                            
+                                        </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a class="" href="/about">about us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/blog">blog</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/contact"> Contact Us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/bulkenquiry">Bulk Enquiry</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@greenkaufen.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-5">
+                            
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="welcome-text">
+                                <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="language_currency text-right">
+                                <ul>
+                                   
+                                    <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_language">
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-6">
+                            <div class="header_right_info">
+                                <div class="search_container">
+                                    <form action="#">
+                                        
+                                        <div class="search_box">
+                                            <input placeholder="Search product..." type="text">
+                                            <button type="submit"><i class="icon-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="header_account_area">
+                                    <div class="header_account-list top_links">
+                                        <a href="#"><i class="icon-users"></i></a>
+                                        <ul class="dropdown_links">
+                                            <li><a href="#">Checkout </a></li>
+                                        <li><a href="/myaccount">My Account </a></li>
+                                        <li><a href="/cart">Shopping Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_account-list header_wishlist">
+                                        <a href="/wishlist"><i class="icon-heart"></i></a>
+                                    </div>
+                                    <div class="header_account-list  mini_cart_wrapper">
+                                        <a href="/cart"><i class="icon-shopping-bag"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            
+                        </div>
+                        <div class="col-lg-6">
+                            <!--main menu start-->
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="" href="/">home</a>
+                                        </li>
+                                        <li><a href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="active" href="/about">about us</a>
+                                        </li>
+                                        <li><a href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="call-support">
+                                <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header area end-->
+
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>Frequently Questions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!--faq area start-->
+    <div class="faq_content_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="faq_content_wrapper">
+                        <h4>Below are frequently asked questions, you may find the answer for yourself</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat sagittis, faucibus
+                            metus malesuada, eleifend turpis. Mauris semper augue id nisl aliquet, a porta lectus
+                            mattis. Nulla at tortor augue. In eget enim diam. Donec gravida tortor sem, ac fermentum
+                            nibh rutrum sit amet. Nulla convallis mauris vitae congue consequat. Donec interdum nunc
+                            purus, vitae vulputate arcu fringilla quis. Vivamus iaculis euismod dui.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Accordion area-->
+    <div class="accordion_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="accordion" class="card__accordion">
+                        <div class="card card_dipult">
+                            <div class="card-header card_accor" id="headingOne">
+                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    What are your eco-friendly tableware products made of?
+
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+
+                                </button>
+
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Our eco-friendly tableware products are made from naturally fallen palm leaves and sugarcane 
+                                        bagasse, which is the fibrous residue remaining after sugarcane stalks are crushed to extract 
+                                        their juice.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingTwo">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Are your products biodegradable?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Yes, all of our palm leaf and sugarcane products are 100% biodegradable and compostable, 
+                                        making them an excellent choice for environmentally conscious consumers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingThree">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Are the palm leaf plates safe for food use?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Absolutely. Our palm leaf plates are made without any chemicals or additives, making them 
+                                        safe for serving all types of food.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingfour">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Can your tableware handle hot and cold foods?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapse4" class="collapse" aria-labelledby="headingfour"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Yes, our tableware is designed to handle both hot and cold foods. Palm leaf and 
+                                        sugarcane products are naturally heat-resistant and can safely hold hot meals, as well as cold dishes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingfive">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Are your products microwave and oven safe?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapse5" class="collapse" aria-labelledby="headingfive"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Palm leaf products can withstand temperatures up to 350°F (177°C) for up to 45 minutes, making them safe for 
+                                        use in the microwave and oven. However, it's best to avoid prolonged exposure to high heat. 
+                                        Sugarcane products are microwave-safe but not recommended for oven use.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingsix">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                    How durable are your palm leaf and sugarcane tableware items?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapsefour" class="collapse" aria-labelledby="headingsix"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Our tableware items are sturdy and durable, capable of holding heavy and moist foods without bending or leaking. 
+                                        Palm leaf plates, in particular, are known for their strength and resilience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingseven">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                    Can I reuse the palm leaf and sugarcane tableware?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapsefive" class="collapse" aria-labelledby="headingseven"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>While our products are designed for single use to ensure hygiene and convenience, palm leaf plates can be gently 
+                                        hand-washed and reused a few times if handled with care. Sugarcane products are intended for single use only.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingeight">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapsesix"
+                                    aria-expanded="false" aria-controls="collapsesix">
+                                    How should I dispose of the tableware after use?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapsesix" class="collapse" aria-labelledby="headingeight"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Simply dispose of our tableware products in your compost bin. 
+                                        They will naturally break down and return to the earth without leaving any toxic residues.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingeight">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseseven"
+                                    aria-expanded="false" aria-controls="collapseseven">
+                                    Are your products suitable for outdoor events?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapseseven" class="collapse" aria-labelledby="headingeight"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Yes, our products are perfect for outdoor events such as picnics, barbecues, and weddings. 
+                                        They are sturdy enough to handle outdoor conditions and biodegradable, making cleanup easy and eco-friendly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingeight">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseeight"
+                                    aria-expanded="false" aria-controls="collapseeight">
+                                    Do you offer bulk purchasing options?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapseeight" class="collapse" aria-labelledby="headingeight"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Yes, we offer bulk purchasing options for events, businesses, and caterers. Please contact us directly for more information and to receive a customized quote.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingeight">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapsenine"
+                                    aria-expanded="false" aria-controls="collapsenine">
+                                    Where are your products sourced from?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapsenine" class="collapse" aria-labelledby="headingeight"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Our palm leaf products are sourced from sustainable plantations in India, where naturally fallen leaves are collected and processed. Our sugarcane products are made from bagasse, a byproduct of sugar production, ensuring minimal waste.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingeight">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapse10"
+                                    aria-expanded="false" aria-controls="collapse10">
+                                    How are the products packaged?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapse10" class="collapse" aria-labelledby="headingeight"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>We use eco-friendly packaging materials to minimize our environmental impact. Our products are packaged in recyclable or compostable materials.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingeight">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapse11"
+                                    aria-expanded="false" aria-controls="collapse11">
+                                    Do you ship internationally?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapse11" class="collapse" aria-labelledby="headingeight"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Yes, we offer international shipping. Shipping costs and delivery times may vary depending on the destination. Please check our shipping policy for more details.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingeight">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapse12"
+                                    aria-expanded="false" aria-controls="collapse12">
+                                    Can I customize the tableware with my logo or design?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapse12" class="collapse" aria-labelledby="headingeight"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Yes, we offer customization options for bulk orders. Please contact us to discuss your specific needs and to receive a quote for custom printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  card_dipult">
+                            <div class="card-header card_accor" id="headingeight">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapse13"
+                                    aria-expanded="false" aria-controls="collapse13">
+                                    What makes your tableware more eco-friendly compared to other disposables?
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <div id="collapse13" class="collapse" aria-labelledby="headingeight"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Our tableware is made from renewable, sustainable materials that decompose naturally and quickly, unlike plastic or Styrofoam, which can take hundreds of years to break down and release harmful chemicals into the environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Accordion area end-->
+    <!--faq area end-->
+
+   
+
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container contact_us">
+                            <h3>Address</h3>
+                            <p><span>GreenKaufen</span> GmbH, Hennef <span> <br>53773,</span> Germany</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Information</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="widgets_container widget_app">
+                            <div class="footer_logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                            
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090579331886"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/greenkaufen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/91609196/admin/feed/posts/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="footer_app">
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/icon/icon-app.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/icon/icon1-app.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>My Account</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/myaccount">My Account</a></li>
+                                    <li><a href="/cart">Shopping cart</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                    <li><a href="/shop?item=all">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Customer Service</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/faq">FAQ</a></li>
+                                    <li><a href="/terms">Terms and Conditions</a></li>
+                                    <li><a href="/privacy">Disclaimer & Privacy</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="/impressum">Impressum</a></li>
+                                    <li><a href="#">Shipping Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p class="copyright-text">&copy; 2024 <a href="/">Green Kaufen</a>. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_payment">
+                            <a href="#"><img src="assets/img/icon/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+
+    <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="/static/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="/static/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="/static/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="/static/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="/static/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="/static/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="/static/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="/static/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="/static/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/js/main.js"></script>
+
+
+
+</body>
+
+</html>

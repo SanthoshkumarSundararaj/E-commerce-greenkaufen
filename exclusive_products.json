@@ -1,0 +1,38 @@
+[
+   {    "id": 1,
+        "name": "Round Plate",
+        "price": "9.99€ - 27.99€",
+        "image": "/static/img/ex-products/p1.png"
+
+    },
+    {
+        "id": 2,
+        "name": "Square Plate",
+        "price": "9.99€ - 27.99€",
+        "image": "/static/img/ex-products/p2.png"
+    },
+    {
+        "id": 3,
+        "name": "Clamshell",
+        "price": "9.99€ - 27.99€",
+        "image": "/static/img/ex-products/p3.png"
+    },
+    {
+        "id": 4,
+        "name": "Rectangular Plate",
+        "price": "9.99€ - 27.99€",
+        "image": "/static/img/ex-products/p4.png"
+    },
+    {
+        "id": 5,
+        "name": "Bamboo Straw",
+        "price": "9.99€ - 27.99€",
+        "image": "/static/img/ex-products/p5.png"
+    },
+    {
+        "id": 6,
+        "name": "Meal Tray",
+        "price": "9.99€ - 27.99€",
+        "image": "/static/img/ex-products/p6.png"
+    }
+]

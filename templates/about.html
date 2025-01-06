@@ -1,0 +1,785 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green Kaufen</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/greenkaufen_logo.png') }}">
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.awesome.css') }}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slinky.menu.css') }}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+    <!--modernizr min js here-->
+    <script src="static/js/modernizr-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--header area start-->
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                        </div>
+                        <div class="welcome-text">
+                            <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                        </div>
+                        <div class="language_currency text-center">
+                            <ul>
+                                
+                                <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a href="#">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            <form action="#">
+                                
+                                <div class="search_box">
+                                    <input placeholder="Search product..." type="text">
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="call-support">
+                            <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a class="active" href="/">home</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/shop?item=all">Shop </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/shop?item=all">All Products</a></li>
+                                            <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                            <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                            
+                                        </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a class="" href="/about">about us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/blog">blog</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/contact"> Contact Us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/bulkenquiry">Bulk Enquiry</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@greenkaufen.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-5">
+                            
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="welcome-text">
+                                <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="language_currency text-right">
+                                <ul>
+                                    
+                                    <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_language">
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle header_middle5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 colm_none">
+                            <!--main menu start-->
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="" href="/">home</a>
+                                        </li>
+                                        <li><a href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="active" href="/about">about us</a>
+                                        </li>
+                                        <li><a href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="header_account_area header_account5">
+                                <div class="header_account-list top_links">
+                                    <a href="#"><i class="icon-users"></i></a>
+                                    <ul class="dropdown_links">
+                                        <li><a href="#">Checkout </a></li>
+                                        <li><a href="/myaccount">My Account </a></li>
+                                        <li><a href="/cart">Shopping Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header_account-list header_wishlist">
+                                    <a href="/wishlist"><i class="icon-heart"></i></a>
+                                </div>
+                                <div class="header_account-list  mini_cart_wrapper">
+                                    <a href="/cart"><i class="icon-shopping-bag"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="header_bottom sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            
+                        </div>
+                        <div class="col-lg-6">
+                            
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="" href="/">home</a>
+                                        </li>
+                                        <li><a href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="active" href="/about">about us</a>
+                                        </li>
+                                        <li><a href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                           
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="call-support">
+                                <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <!--header area end-->
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>about us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!--about section area -->
+    <section class="about_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <figure>
+                        <div class="about_thumb">
+                            <img src="static/img/about_us/main.png" alt="">
+                        </div>
+                        <br>
+                        <br>
+                        <figcaption class="about_content">
+                            <h1>‘’ We Don’t Have To Sacrifice A Strong Economy For A Healthy Environment’’ -- Dennis Weaver</h1>
+                            <p>GreenKaufen GmbH is a company that focuses on supplying compostable and eco-friendly disposables. 
+                                Our products are an ideal replacement for plastic disposables and help our consumers to contribute to the Green Revolution. 
+                                We take our customers one step closer to a plastic-free lifestyle.
+                                We are trying to reduce the consumption of plastic utensils like plastic plates, plastic cups, plastic spoons, etc by replacing them with biodegradable plates, cups, and spoons made from Arecanut Palm Leaf which is fallen naturally from Arecanut (Betel) tree.
+                            </p>
+                            <div class="about_signature">
+                                <img src="assets/img/about/about-us-signature.png" alt="">
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about section end-->
+
+    <!--chose us area start-->
+    <div class="choseus_area" data-bgimg="static/img/about_us/long1.webp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_chose">
+                        <div class="chose_icone">
+                            <img src="static/img/about_us/icon_1.svg" alt="">
+                        </div>
+                        <div class="chose_content">
+                            <h5>A high concentration of micro plastics in the human body leads to deadly diseases and disorders</h5>
+                            <!-- <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare
+                                velit amet</p> -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_chose">
+                        <div class="chose_icone">
+                            <img src="static/img/about_us/icon_2.svg" alt="">
+                        </div>
+                        <div class="chose_content">
+                            <h5>Plastic products have a huge carbon foot print from its raw material form till its product form</h5>
+                            <!-- <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare
+                                velit amet</p> -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="single_chose">
+                        <div class="chose_icone">
+                            <img src="static/img/about_us/icon_3.svg" alt="">
+                        </div>
+                        <div class="chose_content">
+                            <h5>Environmental pollution is at its peak because of the use of plastic</h5>
+                            <!-- <p>Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare
+                                velit amet</p> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--chose us area end-->
+
+    
+
+    <!--services section area-->
+    <!-- <div class="about_gallery_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="services_section_thumb">
+                        <img src="static/img/about_us/5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="unlimited_services_content">
+                        <h1>How We Work</h1>
+                        <p>There is a way to reduce this plastic menace by bringing in new and innovative products which are 
+                            part of nature and doesn’t harm the environment. We are dedicated to delivering products that are 100% sustainable, 
+                            compostable and eco-friendly. </p>
+                        <p>We provide high-quality products at affordable prices as compared to our peers. We make this possible only because we are 
+                            an enthusiastic team of material engineers, who are involved in procuring the products from the source to delivering it directly 
+                            to the customer. Due to our material knowledge, we can maintain and supply high-quality products adhering to German standards.</p>
+                        <p>In addition, we can also provide customized solutions to our customers according to their business needs. We take pleasure in ensuring 
+                            that we are their one-stop solution for choosing to move towards a greener life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--====== Start What We Section ======-->
+
+    {% include 'section.html' %}
+
+    <!--====== End What We Section ======-->
+    <br>
+    <br>
+    <!--services section end-->
+
+    <!--testimonial area start-->
+    <div class="faq-client-say-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="faq-client_title">
+                        <h2>What can we do for you ?</h2>
+                    </div>
+                    <div class="faq-style-wrap" id="faq-five">
+                        <!-- Panel-default -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h5 class="panel-title">
+                                    <a id="octagon" class="collapsed" role="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapse1" aria-expanded="true" aria-controls="faq-collapse1">
+                                        <span class="button-faq"></span>Provide Eco-Friendly Products</a>
+                                </h5>
+                            </div>
+                            <div id="faq-collapse1" class="collapse show" aria-expanded="true" role="tabpanel"
+                                data-parent="#faq-five">
+                                <div class="panel-body">
+                                    <p>At GreenKaufen, we offer a wide range of sustainable products made from palm leaves 
+                                        and sugar cane. Whether you need biodegradable plates for an event, eco-friendly packaging 
+                                        for your business, or stylish, sustainable tableware for your home, we have you covered. 
+                                        Our products are designed to reduce environmental impact while maintaining high quality and functionality.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Panel-default -->
+
+                        <!-- Panel-default -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h5 class="panel-title">
+                                    <a class="collapsed" role="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapse2" aria-expanded="false"
+                                        aria-controls="faq-collapse2"> <span class="button-faq"></span>Custom Solutions
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="faq-collapse2" class="collapse" aria-expanded="false" role="tabpanel"
+                                data-parent="#faq-five">
+                                <div class="panel-body">
+                                    
+                                    <p>We understand that every customer has unique needs. 
+                                        That's why we offer custom solutions tailored to your specific requirements. 
+                                        From personalized branding on our products to custom sizes and designs, we work closely 
+                                        with you to create the perfect sustainable solution. Our team is dedicated to providing innovative and 
+                                        creative options that align with your vision and goals.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Panel-default -->
+
+                        <!-- Panel-default -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h5 class="panel-title">
+                                    <a class="collapsed" role="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapse3" aria-expanded="false"
+                                        aria-controls="faq-collapse3"> <span class="button-faq"></span>Expert Guidance and Support</a>
+                                </h5>
+                            </div>
+                            <div id="faq-collapse3" class="collapse" role="tabpanel" data-parent="#faq-five">
+                                <div class="panel-body">
+                                   
+                                    <p>Navigating the world of sustainable products can be challenging. 
+                                        Our team of experts is here to help. We provide guidance and support to 
+                                        help you make informed decisions about the best eco-friendly options for your needs. 
+                                        Whether you’re a business looking to reduce your carbon footprint or an individual committed to sustainable living, 
+                                        we offer the knowledge and expertise you need to make a positive impact.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Panel-default -->
+
+                        <!-- Panel-default -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h5 class="panel-title">
+                                    <a class="collapsed" role="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapse4" aria-expanded="false"
+                                        aria-controls="faq-collapse4"> <span class="button-faq"></span>Ongoing Commitment to Sustainability</a>
+                                </h5>
+                            </div>
+                            <div id="faq-collapse4" class="collapse" role="tabpanel" data-parent="#faq-five">
+                                <div class="panel-body">
+                                    
+                                    <p>When you choose GreenKaufen, you're partnering with a company that is committed to ongoing sustainability. 
+                                        We continuously seek ways to improve our products and processes to ensure they are as eco-friendly as possible. 
+                                        Our dedication to sustainability extends beyond our products; we also engage in community initiatives and support environmental causes to make a broader impact. 
+                                        By choosing us, you contribute to a larger movement towards a greener planet.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Panel-default -->
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <!--testimonial area start-->
+                    <div class="testimonial_area testimonial_two">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section_title">
+                                        <h2>What Our Customers Says ?</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial_container">
+                                <div class="row">
+                                    <div class="testimonial_carousel owl-carousel">
+                                        <div class="col-12">
+                                            <div class="single-testimonial">
+                                                <div class="testimonial-icon-img">
+                                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                                </div>
+                                                <div class="testimonial_content">
+                                                    <p>“ Fantastische Qualität und umweltfreundlich! Perfekt für unsere Gartenpartys. ”</p>
+                                                    <div class="testimonial_text_img">
+                                                        <img src="/static/img/home_mini/male.png" alt=""></a>
+                                                    </div>
+                                                    <div class="testimonial_author">
+                                                        <p>Kevin</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="single-testimonial">
+                                                <div class="testimonial-icon-img">
+                                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                                </div>
+                                                <div class="testimonial_content">
+                                                    <p>“ Diese biologisch abbaubaren Teller und Bestecke sind großartig. Ich werde sie definitiv wieder kaufen. ”</p>
+                                                    <div class="testimonial_text_img">
+                                                        <img src="/static/img/home_mini/male.png" alt=""></a>
+                                                    </div>
+                                                    <div class="testimonial_author">
+                                                        <p>Steffan</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="single-testimonial">
+                                                <div class="testimonial-icon-img">
+                                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                                </div>
+                                                <div class="testimonial_content">
+                                                    <p>“ Sehr zufrieden mit den Produkten. Sie sind robust und sehen toll aus. Bonus: Sie sind gut für die Umwelt! ”</p>
+                                                    <div class="testimonial_text_img">
+                                                        <img src="/static/img/home_mini/male.png" alt=""></a>
+                                                    </div>
+                                                    <div class="testimonial_author">
+                                                        <p>Santhoshkumar</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="single-testimonial">
+                                                <div class="testimonial-icon-img">
+                                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                                </div>
+                                                <div class="testimonial_content">
+                                                    <p>“ Endlich eine umweltfreundliche Alternative zu Plastikgeschirr. Sehr empfehlenswert! ”</p>
+                                                    <div class="testimonial_text_img">
+                                                        <img src="/static/img/home_mini/female.png" alt=""></a>
+                                                    </div>
+                                                    <div class="testimonial_author">
+                                                        <p>Bindu</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="single-testimonial">
+                                                <div class="testimonial-icon-img">
+                                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                                </div>
+                                                <div class="testimonial_content">
+                                                    <p>“ Die besten Einwegteller, die ich je gekauft habe. Nachhaltig und hochwertig. ”</p>
+                                                    <div class="testimonial_text_img">
+                                                        <img src="/static/img/home_mini/female.png" alt=""></a>
+                                                    </div>
+                                                    <div class="testimonial_author">
+                                                        <p>Anna</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--testimonial area end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--testimonial area end-->
+
+    <!--shipping area start-->
+    <div class="shipping_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_shipping">
+                        <div class="shipping_icone">
+                            <img src="/static/img/home_mini/delivery_small.png" alt="">
+                        </div>
+                        <div class="shipping_content">
+                            <h3>Fast Delivery</h3>
+                            <p>Free shipping inside Germany for<br> orders above €25</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_shipping col_2">
+                        <div class="shipping_icone">
+                            <img src="/static/img/home_mini/payment.png" alt="">
+                        </div>
+                        <div class="shipping_content">
+                            <h3>Safe Payment</h3>
+                            <p>With our payment gateway, don’t worry <br> about your information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_shipping col_3">
+                        <div class="shipping_icone">
+                            <img src="/static/img/home_mini/service.png" alt="">
+                        </div>
+                        <div class="shipping_content">
+                            <h3>Friendly Services</h3>
+                            <p>You have 15-day return guarantee for <br> every single order</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--shipping area end-->
+
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container contact_us">
+                            <h3>Address</h3>
+                            <p><span>GreenKaufen</span> GmbH, Hennef <span> <br>53773,</span> Germany</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Information</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="widgets_container widget_app">
+                            <div class="footer_logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                            
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090579331886"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/greenkaufen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/91609196/admin/feed/posts/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="footer_app">
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/icon/icon-app.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/icon/icon1-app.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>My Account</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/myaccount">My Account</a></li>
+                                    <li><a href="/cart">Shopping cart</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                    <li><a href="/shop?item=all">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Customer Service</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/faq">FAQ</a></li>
+                                    <li><a href="/terms">Terms and Conditions</a></li>
+                                    <li><a href="/privacy">Disclaimer & Privacy</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="/impressum">Impressum</a></li>
+                                    <li><a href="#">Shipping Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p class="copyright-text">&copy; 2024 <a href="/">Green Kaufen</a>. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_payment">
+                            <a href="#"><img src="assets/img/icon/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+
+
+    <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="static/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="static/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="static/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="static/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="static/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="static/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="static/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="static/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="static/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="static/js/main.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,454 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green Kaufen </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/greenkaufen_logo.png') }}">
+
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.awesome.css') }}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slinky.menu.css') }}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+    <!--modernizr min js here-->
+    <script src="/static/js/modernizr-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--header area start-->
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                        </div>
+                        <div class="welcome-text">
+                            <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                        </div>
+                        <div class="language_currency text-center">
+                            <ul>
+                                
+                                <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a href="#">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            <form action="#">
+                                
+                                <div class="search_box">
+                                    <input placeholder="Search product..." type="text">
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="call-support">
+                            <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a class="active" href="/">home</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/shop?item=all">Shop </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/shop?item=all">All Products</a></li>
+                                            <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                            <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                            
+                                        </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a class="" href="/about">about us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/blog">blog</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/contact"> Contact Us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/bulkenquiry">Bulk Enquiry</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@greenkaufen.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-5">
+                            
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="welcome-text">
+                                <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="language_currency text-right">
+                                <ul>
+                                    
+                                    <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_language">
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-6">
+                            <div class="header_right_info">
+                                <div class="search_container">
+                                    <form action="#">
+                                        
+                                        <div class="search_box">
+                                            <input placeholder="Search product..." type="text">
+                                            <button type="submit"><i class="icon-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="header_account_area">
+                                    <div class="header_account-list top_links">
+                                        <a href="#"><i class="icon-users"></i></a>
+                                        <ul class="dropdown_links">
+                                            <li><a href="#">Checkout </a></li>
+                                        <li><a href="/myaccount">My Account </a></li>
+                                        <li><a href="/cart">Shopping Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_account-list header_wishlist">
+                                        <a href="/wishlist"><i class="icon-heart"></i></a>
+                                    </div>
+                                    <div class="header_account-list  mini_cart_wrapper">
+                                        <a href="/cart"><i class="icon-shopping-bag"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            
+                        </div>
+                        <div class="col-lg-6">
+                            <!--main menu start-->
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="" href="/">home</a>
+                                        </li>
+                                        <li><a href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="active" href="/about">about us</a>
+                                        </li>
+                                        <li><a href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="call-support">
+                                <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header area end-->
+
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>Terms and Condition</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!--faq area start-->
+    <div class="faq_content_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="faq_content_wrapper">
+                        <h3>General Terms And Conditions Of GreenKaufen GmbH</h3>
+                        <p>Below you will find our general terms and conditions:</p>
+
+                        <h4>1. General</h4>
+                        <p>The following terms and conditions shall apply in their current version to all future contracts with GreenKaufen GmbH Am markt 1, 
+                            Hennef 53773 exclusively. Subsidiary agreements shall only be made in writing.</p><br>
+
+                        <h4>2. Changes</h4>
+                        <p>We reserve the right to make reasonable changes to the products without prior notice, provided that this does not result in an unreasonable change to the subject matter of the contract. Our information on the properties and intended use of the products serves merely as a description and does not contain any current guarantee of properties.</p>
+                        <p>Product illustrations are only approximately authoritative. Only product samples sent to us shall be deemed to be illustrative of quality, material and properties. Errors are possible due to incorrect transmission of information by suppliers or manufacturers. The properties of products are only and exclusively guaranteed by the requested sending of the current product data sheets or certificates of the manufacturer or distributor related to the articles.</p><br>
+
+                        <h4>3. Prices, shipping and freight costs and license fees</h4>
+                        <p>Our offers are directed at trade, commerce, industry and craft. Unless otherwise stated, all prices are always net prices in euros plus the applicable value added tax and shipping or freight costs. The prices do not include any disposal costs or license fees of the Dual System for packaging.</p><br>
+                        
+                        <h4>4. Conclusion of contract</h4>
+                        <p>A contract is only concluded upon written order confirmation or shipment of the ordered goods to the last known address. We reserve the right to stop outstanding deliveries or to demand advance payment if reasonable doubts about the creditworthiness of the purchaser arise between the conclusion of the contract and the performance of the service or if there is a delay in payment of due invoices.</p><br>
+
+                        <h4>5. Delivery, payment and retention of title</h4>
+                        <p>As part of the terms and conditions, our shipping and payment conditions shown on our web shop pages. Furthermore, all delivery times are non-binding. For first-time orders, delivery may be extended due to advance payment or credit checks to be carried out.</p>
+                        <p>Transport damage must be reported immediately to the carrier. In this case, the customer is obliged to inform the deliverer (parcel service, forwarding agent) about the transport damage and acceptance is to be refused. The delivery of the goods takes place – if nothing else is agreed – against prepayment customer has to report immediately to the given company email address or customer support.</p>
+                        <p>If a direct debit agreement has been concluded, delivery shall be made against the invoice with a discount agreement or with the granting of a term of payment. A delivery against invoice can be agreed separately. Offsetting or retention of payments due to counterclaims disputed by us and not legally established is not possible.</p>
+                        <p>In the event of multiple payment reminders, we shall charge a lump sum of € 5 from the second reminder stage onwards, and € 15 from the third reminder stage onwards. The delivered goods shall remain our property until full payment of all claims arising from the purchase contract. If the buyer does not fulfill his contractual obligations, especially in case of default of payment, we are entitled to withdraw from the contract and to demand the return of the delivered item; the buyer is obliged to return the item.</p><br>
+
+                        <h4>6. Warranty and liability</h4>
+                        <p>A warranty period of six months from delivery shall apply. Excluded from this are damages due to intent or gross negligence or culpable injury to life, body and health. § 478 and § 479 BGB remain unaffected.</p>
+                        <p>In commercial transactions, obvious defects must be reported immediately upon receipt of the goods, but within 14 days at the latest. Hidden defects must be reported in writing immediately after their discovery. 
+                            If the purchaser fails to give notice of defects in due time and form, the goods shall be deemed approved. 
+                            In contrast to private persons, entrepreneurs are not entitled to a legal right of revocation. 
+                            In the event of an incorrect order, please call us and we will clarify the possibilities of goodwill with you in each individual case. 
+                            Goods sent freight collect will not be accepted by us. We are otherwise contractually, pre-contractually and extra-contractually liable for compensation of damages or reimbursement of futile expenses caused by us, our legal representatives, employees or agents, only in case of intent or gross negligence or culpable breach of essential contractual obligations (cardinal obligations) or culpable causation of damage to life, limb or health. Except in the case of intent or gross negligence or in the case of damage to life, 
+                            limb or health, our liability in the event of a breach of a cardinal obligation shall be limited at most to the foreseeable damage typical for the contract. The limitation of liability also extends to the personal liability of our employees, legal representatives and vicarious agents. Claims under the Product Liability Act due to fraudulent misrepresentation or due to a procurement risk assumed by us shall remain unaffected.</p><br>
+
+                        <h4>7. Data protection and copyright</h4>
+                        <p>As part of the terms and conditions our privacy policy applies on our web shop pages.</p>
+                        <p>Furthermore, the following shall apply: The customer agrees that his personal data received in the course of the business relationship shall be stored and automatically processed in our system for the purpose of processing the business relationship. For these purposes, your data will also be passed on to upstream or downstream service providers, e.g. freight carriers and parcel services.</p>
+                        <p>The customer is entitled to query the data stored about him or his pseudonym free of charge at any time. The customer shall indemnify us against all claims of third parties with regard to the data provided. Packaging designs made available by us for the purpose of an offer or contract negotiation are subject to copyright and remain our property until the conclusion of the contract. Copying or passing on is only permitted with our written consent. This also applies to all other advertising and marketing materials provided, regardless of format, design or intended use.</p><br>
+
+                        <h4>8. Legal validity, law and place of jurisdiction</h4>
+                        <p>The invalidity of individual provisions of these General Terms and Conditions shall not affect the validity of the remaining provisions. The relationship between the contracting parties shall be governed exclusively by the law applicable in the Federal Republic of Germany, to the exclusion of international sales law, in particular the UN Convention on Contracts for the International Sale of Goods. Place of performance and exclusive place of jurisdiction is Bremen, Germany, provided that the contracting party is a merchant, a legal entity under public law or a special fund under public law.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--faq area end-->
+
+  
+
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container contact_us">
+                            <h3>Address</h3>
+                            <p><span>GreenKaufen</span> GmbH, Hennef <span> <br>53773,</span> Germany</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Information</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="widgets_container widget_app">
+                            <div class="footer_logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                            
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090579331886"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/greenkaufen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/91609196/admin/feed/posts/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="footer_app">
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/icon/icon-app.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/icon/icon1-app.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>My Account</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/myaccount">My Account</a></li>
+                                    <li><a href="/cart">Shopping cart</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                    <li><a href="/shop?item=all">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Customer Service</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/faq">FAQ</a></li>
+                                    <li><a href="/terms">Terms and Conditions</a></li>
+                                    <li><a href="/privacy">Disclaimer & Privacy</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="/impressum">Impressum</a></li>
+                                    <li><a href="#">Shipping Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p class="copyright-text">&copy; 2024 <a href="/">Green Kaufen</a>. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_payment">
+                            <a href="#"><img src="assets/img/icon/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+
+    <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="/static/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="/static/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="/static/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="/static/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="/static/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="/static/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="/static/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="/static/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="/static/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/js/main.js"></script>
+
+
+
+</body>
+
+</html>

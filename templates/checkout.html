@@ -1,0 +1,638 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green Kaufen </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/greenkaufen_logo.png') }}">
+
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.awesome.css') }}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slinky.menu.css') }}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+    <!--modernizr min js here-->
+    <script src="/static/js/modernizr-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--header area start-->
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                        </div>
+                        <div class="welcome-text">
+                            <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                        </div>
+                        <div class="language_currency text-center">
+                            <ul>
+                                
+                                <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a href="#">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            <form action="#">
+                                
+                                <div class="search_box">
+                                    <input placeholder="Search product..." type="text">
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="call-support">
+                            <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a class="active" href="/">home</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/shop?item=all">Shop </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/shop?item=all">All Products</a></li>
+                                            <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                            <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                            
+                                        </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a class="" href="/about">about us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/blog">blog</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/contact"> Contact Us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/bulkenquiry">Bulk Enquiry</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@greenkaufen.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-5">
+                            
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="welcome-text">
+                                <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="language_currency text-right">
+                                <ul>
+                                    
+                                    <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_language">
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle header_middle5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 colm_none">
+                            <!--main menu start-->
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="" href="/">home</a>
+                                        </li>
+                                        <li><a href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="" href="/about">about us</a>
+                                        </li>
+                                        <li><a class="" href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="header_account_area header_account5">
+                                <div class="header_account-list top_links">
+                                    <a href="#"><i class="icon-users"></i></a>
+                                    <ul class="dropdown_links">
+                                        <li><a href="#">Checkout </a></li>
+                                        <li><a href="/myaccount">My Account </a></li>
+                                        <li><a href="/cart">Shopping Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header_account-list header_wishlist">
+                                    <a href="/wishlist"><i class="icon-heart"></i></a>
+                                </div>
+                                <div class="header_account-list  mini_cart_wrapper">
+                                    <a href="/cart"><i class="icon-shopping-bag"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <!--header area end-->
+
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>Checkout</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>Checkout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!--Checkout page section-->
+    <div class="Checkout_section  mt-100" id="accordion">
+        <div class="container">
+            
+            <div class="checkout_form">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <form action="{{ url_for('process_checkout') }}" method="post">
+                            <h3>Billing Details</h3>
+                            <div class="row">
+
+                                <div class="col-lg-6 mb-20">
+                                    <label>First Name <span>*</span></label>
+                                    <input type="text" value="{{profile.first_name}}">
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label>Last Name <span>*</span></label>
+                                    <input type="text" value="{{profile.last_name}}">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label>Company Name</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label for="country">country <span>*</span></label>
+                                    <select class="select_option" name="cuntry" id="country">
+                                        <option value="2">Deutschland</option>
+                                        <option value="3">Poland</option>
+                                        <option value="4">Netherland</option>
+                                        <option value="5">Belgium</option>
+                                        <option value="6">Luxembourg</option>
+                                        <option value="7">Switzerland</option>
+                                        <option value="8">Austria</option>
+                                        <option value="9">France</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="col-12 mb-20">
+                                    <label>Street address <span>*</span></label>
+                                    <input placeholder="House number and street name" type="text" value="{{billing.street}}">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <input placeholder="Apartment, suite, unit etc. (optional)" type="text">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label>Town / City <span>*</span></label>
+                                    <input type="text" value="{{billing.city}}">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label>State / County <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label>Phone<span>*</span></label>
+                                    <input type="text" >
+
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label> Email Address <span>*</span></label>
+                                    <input type="text" value="{{email}}">
+
+                                </div>
+                                
+                                <div class="col-12 mb-20">
+                                    <input id="address" type="checkbox" data-bs-target="createp_account" />
+                                    <label class="righ_0" for="address" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsetwo" aria-controls="collapseOne">Ship to a different
+                                        address?</label>
+
+                                    <div id="collapsetwo" class="collapse one" data-parent="#accordion">
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-20">
+                                                <label>First Name <span>*</span></label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="col-lg-6 mb-20">
+                                                <label>Last Name <span>*</span></label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="col-12 mb-20">
+                                                <label>Company Name</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="col-12 mb-20">
+                                                <div class="select_form_select">
+                                                    <label for="countru_name">country <span>*</span></label>
+                                                    <select class="select_option" name="cuntry" id="country">
+                                                        <option value="2">Deutschland</option>
+                                                        <option value="3">Poland</option>
+                                                        <option value="4">Netherland</option>
+                                                        <option value="5">Belgium</option>
+                                                        <option value="6">Luxembourg</option>
+                                                        <option value="7">Switzerland</option>
+                                                        <option value="8">Austria</option>
+                                                        <option value="9">France</option>
+                
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-20">
+                                                <label>Street address <span>*</span></label>
+                                                <input placeholder="House number and street name" type="text">
+                                            </div>
+                                            <div class="col-12 mb-20">
+                                                <input placeholder="Apartment, suite, unit etc. (optional)" type="text">
+                                            </div>
+                                            <div class="col-12 mb-20">
+                                                <label>Town / City <span>*</span></label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="col-12 mb-20">
+                                                <label>State / County <span>*</span></label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="col-lg-6 mb-20">
+                                                <label>Phone<span>*</span></label>
+                                                <input type="text">
+
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label> Email Address <span>*</span></label>
+                                                <input type="text">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="order-notes">
+                                        <label for="order_note">Order Notes</label>
+                                        <textarea id="order_note"
+                                            placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        
+                            <h3>Your order</h3>
+                            <div class="order_table table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    {% set subtotal = 0 %}
+                                    <tbody>
+                                        {% for key in cart_items %}
+                                        {% set price = key.price[key.quantity|string] %}
+                                        {% set item_total = key.number | float * price | float %}
+                                        {% set subtotal = subtotal + item_total %}            
+                                        <tr>
+                                            <td> {{ key.name }} <strong> × {{ key.number }}</strong>
+                                                <input type="hidden" class="quantity-input" value="{{ key.number }}" data-price="{{ price }}" min="1">
+                                            </td>
+                                            {% set total = key.number | float * price | float %}
+                                            <td class="product_total">€ {{ "%.2f"|format(item_total) }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Cart Subtotal</th>
+                                            <td id="subtotal">€ {{ "%.2f"|format(subtotal) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Shipping</th>
+                                            <td><strong>€ 5.00</strong></td>
+                                        </tr>
+                                        <tr class="order_total">
+                                            <th>Order Total</th>
+                                            <td id="total"><strong>€ {{ "%.2f"|format(subtotal + 5) }}</strong></td>
+                                            <input type="hidden" name="order_total" id="order_total_input" value="{{ "%.2f"|format(subtotal + 5) }}">
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="payment_method">
+                                <div class="panel-default">
+                                    <input id="payment" name="check_method" type="radio" value="bank_transfer"
+                                        data-bs-target="createp_account" />
+                                    <label for="payment" data-bs-toggle="collapse" data-bs-target="#method"
+                                        aria-controls="method">Transfer to bank account</label>
+
+                                    <div id="method" class="collapse one" data-parent="#accordion">
+                                        <div class="card-body1">
+                                            <p>Please send a check to Store Name, Store Street, Store Town, Store State
+                                                / County, Store Postcode.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-default">
+                                    <input id="payment_defult" name="check_method" type="radio" value="paypal"
+                                        data-bs-target="createp_account" />
+                                    <label for="payment_defult" data-bs-toggle="collapse" data-bs-target="#collapsedefult"
+                                        aria-controls="collapsedefult">PayPal, Credit / Debit <img src="assets/img/icon/papyel.png"
+                                            alt=""></label>
+
+                                    <div id="collapsedefult" class="collapse one" data-parent="#accordion">
+                                        <div class="card-body1">
+                                            <p>Pay via PayPal; you can pay with your credit card / debit card / IBAN if you don’t have a
+                                                PayPal account.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_button">
+                                    <button type="submit">Proceed</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Checkout page section end-->
+
+   
+
+   <!--footer area start-->
+   <footer class="footer_widgets">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="widgets_container contact_us">
+                        <h3>Address</h3>
+                        <p><span>GreenKaufen</span> GmbH, Hennef <span> <br>53773,</span> Germany</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="widgets_container widget_menu">
+                        <h3>Information</h3>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="widgets_container widget_app">
+                        <div class="footer_logo">
+                            <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                        </div>
+                        
+                        <div class="footer_social">
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=100090579331886"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/greenkaufen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/91609196/admin/feed/posts/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer_app">
+                            <ul>
+                                <li><a href="#"><img src="assets/img/icon/icon-app.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="assets/img/icon/icon1-app.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="widgets_container widget_menu">
+                        <h3>My Account</h3>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="/myaccount">My Account</a></li>
+                                <li><a href="/cart">Shopping cart</a></li>
+                                <li><a href="/checkout">Checkout</a></li>
+                                <li><a href="/shop?item=all">Shop</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="widgets_container widget_menu">
+                        <h3>Customer Service</h3>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/terms">Terms and Conditions</a></li>
+                                <li><a href="/privacy">Disclaimer & Privacy</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="/impressum">Impressum</a></li>
+                                <li><a href="#">Shipping Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="copyright_area">
+                        <p class="copyright-text">&copy; 2024 <a href="/">Green Kaufen</a>. </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer_payment">
+                        <a href="#"><img src="assets/img/icon/payment.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer area end-->
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const quantityInputs = document.querySelectorAll('.quantity-input');
+        
+          const updateTotals = () => {
+            let subtotal = 0;
+        
+            quantityInputs.forEach(input => {
+              const quantity = parseInt(input.value);
+              const price = parseFloat(input.getAttribute('data-price'));
+              const totalElement = input.closest('tr').querySelector('.product_total');
+              const total = (quantity * price).toFixed(2);
+        
+              totalElement.textContent = `€${total}`;
+              subtotal += parseFloat(total);
+            });
+        
+            document.getElementById('subtotal').textContent = `€${subtotal.toFixed(2)}`;
+            const shipping = 5.00; // Assuming flat rate shipping
+            document.getElementById('total').textContent = `€${(subtotal + shipping).toFixed(2)}`;
+          };
+        
+          quantityInputs.forEach(input => {
+            input.addEventListener('input', function () {
+              updateTotals();
+            });
+            input.addEventListener('change', function () {
+              updateTotals();
+            });
+          });
+        
+          // Initial calculation
+          updateTotals();
+        });
+      </script>
+      
+
+
+    <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="/static/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="/static/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="/static/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="/static/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="/static/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="/static/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="/static/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="/static/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="/static/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>

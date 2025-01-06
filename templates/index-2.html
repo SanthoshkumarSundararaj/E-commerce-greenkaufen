@@ -1,0 +1,941 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green Kaufen </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/greenkaufen_logo.png') }}">
+
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.awesome.css') }}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slinky.menu.css') }}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+
+    <!--modernizr min js here-->
+    <script src="/static/js/modernizr-3.7.1.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/translations.js') }}"></script>
+</head>
+
+<body onload="loadLanguage()">
+    <!--offcanvas menu area start-->
+    <!-- <div class="off_canvars_overlay">
+
+    </div> -->
+    <!--header start-->
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                        </div>
+                        <div class="welcome-text">
+                            <p id=""><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                        </div>
+                        <div class="language_currency text-center">
+                            <ul>
+                                
+                                <li class="language"><a onclick="switchLanguage('en')"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a onclick="switchLanguage('de')">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            <form action="#">
+                                
+                                <div class="search_box">
+                                    <input placeholder="Search product..." type="text">
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="call-support">
+                            <p>Call Support: <a href="#">+49 176 8730 2525</a></p>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a class="active" href="/">home</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/shop?item=all">Shop </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/shop?item=all">All Products</a></li>
+                                            <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                            <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                            
+                                        </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a class="" href="/about">about us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/blog">blog</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/contact"> Contact Us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="/bulkenquiry">Bulk Enquiry</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@greenkaufen.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!--offcanvas menu area -->
+    <header>
+        <div class="main_header header_five">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-5">
+                            <p>Welcome {{user_email}}!</p>
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="welcome-text">
+                                <p id="free_deli" style="color: orangered;"><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="language_currency text-right">
+                                <ul>
+                                    
+                                    <li class="language"><a onclick="switchLanguage('en')"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a onclick="switchLanguage('de')">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle header_middle5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <div class="logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 colm_none">
+                            <!--main menu start-->
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="active" href="/" id="home">home</a>
+                                        </li>
+                                        <li><a href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="" href="/about">about us</a>
+                                        </li>
+                                        <li><a href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="header_account_area header_account5">
+                                <div class="header_account-list top_links">
+                                    <a href="#"><i class="icon-users"></i></a>
+                                    <ul class="dropdown_links">
+                                        <li><a href="#">Checkout </a></li>
+                                        <li><a href="/myaccount">My Account </a></li>
+                                        <li><a href="/cart">Shopping Cart</a></li>
+                                        <li><a href="/wishlist">Wishlist</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header_account-list header_wishlist">
+                                    <a href="/wishlist"><i class="icon-heart"></i></a>
+                                </div>
+                                <div class="header_account-list  mini_cart_wrapper">
+                                    <a href="/cart"><i class="icon-shopping-bag"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header area end-->
+
+    <!--slider area start-->
+    <section class="slider_section mb-30">
+        <div class="slider_area owl-carousel">
+            <div class="single_slider d-flex align-items-center" data-bgimg="static/img/slider/1.png">
+                
+            </div>
+            <div class="single_slider d-flex align-items-center" data-bgimg="static/img/slider/2.png">
+                
+            </div>
+            <div class="single_slider d-flex align-items-center" data-bgimg="static/img/slider/3.png">
+                
+            </div>
+        </div>
+    </section>
+    <!--slider area end-->
+
+    <!--lukani store title start-->
+        <!-- <div class="container">
+            <div class="welcome_lukani_container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="welcome_lukani_thumb">
+                            <img src="static/img/slider/solution_2.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <div class="welcome_lukani_content">
+                            <div class="welcome_lukani_header">
+                                <h3>Welcome to the Green Solution</h3>
+                                <h2>Green Kaufen GmbH</h2>
+                            </div>
+                            <div class="welcome_lukani_desc">
+                                <p>Plastic has become an omnipresent part of our daily existence, found in almost every item we utilize. 
+                                    Recognizing this pervasive issue as a severe threat to our environment, we are committed to replacing single-use plastics with sustainable alternatives. 
+                                    At GreenKaufen, our mission extends far beyond just providing products. We deeply believe that even minor actions can lead to substantial changes, and that sustainability begins within our own homes.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> -->
+        <!--services section area-->
+    <br>
+    <br>
+    <div class="about_gallery_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="services_section_thumb">
+                        <img src="static/img/about_us/5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-12">
+                    
+                </div>
+                
+                <div class="col-lg-7 col-md-12">
+                    <div class="unlimited_services_content">
+                        <div class="welcome_lukani_header">
+                            <h3 id="welcome">Welcome to the Green Solution</h3>
+                            <h2>Green Kaufen GmbH</h2>
+                        </div>
+                        <p id="welcome_1">There is a way to reduce this plastic menace by bringing in new and innovative products which are
+                            part of nature and doesn’t harm the environment. We are dedicated to delivering products that are 100% sustainable, 
+                            compostable and eco-friendly. </p>
+                        <p id="welcome_2">We provide high-quality products at affordable prices as compared to our peers. We make this possible only because we are
+                            an enthusiastic team of material engineers, who are involved in procuring the products from the source to delivering it directly 
+                            to the customer. Due to our material knowledge, we can maintain and supply high-quality products adhering to German standards.</p>
+                        <p id="welcome_3">In addition, we can also provide customized solutions to our customers according to their business needs. We take pleasure in ensuring
+                            that we are their one-stop solution for choosing to move towards a greener life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--lukani store titlev end-->
+
+    
+
+    <!--banner area start-->
+    <div class="banner_area">
+        <div class="container">
+            <div class="welcome_lukani_container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <figure class="single_banner">
+                        <div class="banner_thumb">
+                            <a href="shop.html"><img src="static/img/home_mini/palm.png" alt=""></a>
+                            <div class="banner_content">
+                                <!-- <h3>Big Sale Products</h3> -->
+                                <h2>Palm Leaf <br> Products</h2>
+                                <a href="shop.html">Shop Now</a>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <figure class="single_banner">
+                        <div class="banner_thumb">
+                            <a href="shop.html"><img src="static/img/home_mini/sugar.png" alt=""></a>
+                            <div class="banner_content">
+                                
+                                <h2>Sugarcane <br>(Bagasse) <br> Products</h2>
+                                <a href="shop.html">Shop Now</a>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--banner area end-->
+    <!--product area start-->
+    <div class="product_area product_style2">
+        <div class="container-fluid">
+            <!-- <div class="welcome_lukani_container"> -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title">
+                        <h2 id="feature_pro">Featured Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="product_style2_ocntainer">
+                <div class="row">
+                    <div class="product_carousel product2_column5 owl-carousel">
+                    {% for key in ex_product %}    
+                        <div class="col-lg-3">
+                            <div class="product_items">
+                                <article class="single_product">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a class="primary_img" href="/product/{{ key.id }}"><img
+                                                    src="{{ key.image_1 }}" alt=""></a>
+                                            <div class="label_product">
+                                                <span class="label_sale">sale</span>
+                                            </div>
+                                            <div class="action_links">
+                                                <ul>
+                                                    <li class="wishlist"><a href="/add_to_wishlist/{{ key.id }}"
+                                                            title="Add to Wishlist"><i class="icon-heart"></i></a></li>
+                                                    <li class="quick_button"><a href="/product/{{ key.id }}" > <i
+                                                                class="icon-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <figcaption class="product_content">
+                                            <h4 class="product_name"><a href="/product/{{ key.id }}">{{ key.name }}</a></h4>
+                                            <div class="price_box">
+                                                <span class="current_price">€ {{ key.start_price }} - € {{ key.end_price }}</span>
+                                                <!-- <span class="old_price">£74.00</span> -->
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--product area end-->
+
+    <!--chose us area start-->
+    <div class="choseus_area" data-bgimg="/static/img/home_mini/home_banner.png" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="single_chose">
+                        <div class="chose_icone">
+                            <img src="assets/img/about/About_icon2.png" alt="">
+                        </div>
+                        <div class="chose_content">
+                            
+                            <h3 style="color: white;">   <br><br>    </h3>
+                            <h4 style="color: white;">  <br><br> <br><br>      </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                   
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="single_chose">
+                        <div class="chose_icone">
+                            <img src="assets/img/about/About_icon2.png" alt="">
+                        </div>
+                        <div class="chose_content">
+                            
+                            <h3 style="color: white;"> <br><br>    
+                            </h3>
+                                <h4 style="color: white;">  <br><br> <br><br>   </h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--chose us area end-->
+
+    <!--testimonial area start-->
+    <div class="testimonial_area testimonial_two">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title">
+                        <h2 id="cus_says">What Our Customers Says ?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_container">
+                <div class="row">
+                    <div class="testimonial_carousel owl-carousel">
+                        <div class="col-12">
+                            <div class="single-testimonial">
+                                <div class="testimonial-icon-img">
+                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                </div>
+                                <div class="testimonial_content">
+                                    <p>“ Fantastische Qualität und umweltfreundlich! Perfekt für unsere Gartenpartys. ”</p>
+                                    <div class="testimonial_text_img">
+                                        <img src="/static/img/home_mini/male.png" alt=""></a>
+                                    </div>
+                                    <div class="testimonial_author">
+                                        <p>Kevin</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single-testimonial">
+                                <div class="testimonial-icon-img">
+                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                </div>
+                                <div class="testimonial_content">
+                                    <p>“ Diese biologisch abbaubaren Teller und Bestecke sind großartig. Ich werde sie definitiv wieder kaufen. ”</p>
+                                    <div class="testimonial_text_img">
+                                        <img src="/static/img/home_mini/male.png" alt=""></a>
+                                    </div>
+                                    <div class="testimonial_author">
+                                        <p>Steffan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single-testimonial">
+                                <div class="testimonial-icon-img">
+                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                </div>
+                                <div class="testimonial_content">
+                                    <p>“ Sehr zufrieden mit den Produkten. Sie sind robust und sehen toll aus. Bonus: Sie sind gut für die Umwelt! ”</p>
+                                    <div class="testimonial_text_img">
+                                        <img src="/static/img/home_mini/male.png" alt=""></a>
+                                    </div>
+                                    <div class="testimonial_author">
+                                        <p>Santhoshkumar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single-testimonial">
+                                <div class="testimonial-icon-img">
+                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                </div>
+                                <div class="testimonial_content">
+                                    <p>“ Endlich eine umweltfreundliche Alternative zu Plastikgeschirr. Sehr empfehlenswert! ”</p>
+                                    <div class="testimonial_text_img">
+                                        <img src="/static/img/home_mini/female.png" alt=""></a>
+                                    </div>
+                                    <div class="testimonial_author">
+                                        <p>Bindu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="single-testimonial">
+                                <div class="testimonial-icon-img">
+                                    <img src="/static/img/home_mini/quote.png" alt="">
+                                </div>
+                                <div class="testimonial_content">
+                                    <p>“ Die besten Einwegteller, die ich je gekauft habe. Nachhaltig und hochwertig. ”</p>
+                                    <div class="testimonial_text_img">
+                                        <img src="/static/img/home_mini/female.png" alt=""></a>
+                                    </div>
+                                    <div class="testimonial_author">
+                                        <p>Anna</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--testimonial area end-->
+    <!--blog area start-->
+    <section class="blog_section blog_s_three">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title">
+                        <h2 id="post">Our Latest Posts</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="blog_carousel blog_column3 owl-carousel">
+                    {% for i in blog_post %} 
+                    <div class="col-lg-3">
+                        <article class="single_blog">
+                            <figure>
+                                <div class="blog_thumb">
+                                    <a href="/blogdetail?id={{i.id}}"><img src="{{i.image}}" alt=""></a>
+                                </div>
+                                <figcaption class="blog_content">
+                                    <h4 class="post_title">{{ i.title }}</h4>
+                                    <div class="articles_date">
+                                        <p>By <span>{{ i.author }} / {{ i.date }}</span></p>
+                                    </div>
+                                    <p class="post_desc">{{ i.short_info }}</p>
+                                    <footer class="blog_footer">
+                                        <a href="/blogdetail?id={{i.id}}">Continue Reading</a>
+                                        <p><i class="icon-message-circle"></i> <span>0</span></p>
+                                    </footer>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--blog area end-->
+
+
+    <!--brand area start-->
+    <!-- <div class="brand_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="brand_container owl-carousel">
+                        <div class="single_brand">
+                            <a href="#"><img src="/static/img/home_mini/1.svg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="static/img/home_mini/2.svg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="static/img/home_mini/3.svg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="static/img/home_mini/4.svg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="static/img/home_mini/5.svg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="static/img/home_mini/6.svg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="static/img/home_mini/1.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!--brand area end-->
+
+    <!--newsletter area start-->
+    <div class="newsletter_area_start newsletter_two">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section_title">
+                        <h2 id="offer">Get 20% Off Your Next Order</h2>
+                    </div>
+                    <div class="newsletter_container">
+                        <div class="subscribe_form">
+                            <form id="subscribe-form">
+                                <input id="mc-email" type="email" autocomplete="off" placeholder="Enter you email" name="email" required/>
+                                <button id="mc-submit">Subscribe</button>
+                                <div class="email_icon">
+                                    <i class="icon-mail"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert -->
+<div id="subscriptionAlert" class="alert alert-success alert-dismissible fade" role="alert" style="display: none;">
+    Thanks for subscribing!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+    <!--newsletter area end-->
+
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container contact_us">
+                            <h3>Address</h3>
+                            <p><span>GreenKaufen</span> GmbH, Hennef <span> <br>53773,</span> Germany</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Information</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="widgets_container widget_app">
+                            <div class="footer_logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                            
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090579331886"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/greenkaufen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/91609196/admin/feed/posts/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="footer_app">
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/icon/icon-app.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/icon/icon1-app.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>My Account</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/myaccount">My Account</a></li>
+                                    <li><a href="/cart">Shopping cart</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                    <li><a href="/shop?item=all">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Customer Service</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/faq">FAQ</a></li>
+                                    <li><a href="/terms">Terms and Conditions</a></li>
+                                    <li><a href="/privacy">Disclaimer & Privacy</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="/impressum">Impressum</a></li>
+                                    <li><a href="#">Shipping Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p class="copyright-text">&copy; 2024 <a href="/">Green Kaufen</a>. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_payment">
+                            <a href="#"><img src="assets/img/icon/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+    <!-- modal area start-->
+    <!-- <div class="modal fade" id="modal_box" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="icon-x"></i></span>
+                </button>
+                <div class="modal_body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                <div class="modal_tab">
+                                    <div class="tab-content product-details-large">
+                                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                                            <div class="modal_tab_img">
+                                                <a href="#"><img src="assets/img/product/productbig1.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                            <div class="modal_tab_img">
+                                                <a href="#"><img src="assets/img/product/productbig2.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                            <div class="modal_tab_img">
+                                                <a href="#"><img src="assets/img/product/productbig3.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab4" role="tabpanel">
+                                            <div class="modal_tab_img">
+                                                <a href="#"><img src="assets/img/product/productbig4.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal_tab_button">
+                                        <ul class="nav product_navactive owl-carousel" role="tablist">
+                                            <li>
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab"
+                                                    aria-controls="tab1" aria-selected="false"><img
+                                                        src="assets/img/product/product1.jpg" alt=""></a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab"
+                                                    aria-controls="tab2" aria-selected="false"><img
+                                                        src="assets/img/product/product2.jpg" alt=""></a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link button_three" data-bs-toggle="tab" href="#tab3"
+                                                    role="tab" aria-controls="tab3" aria-selected="false"><img
+                                                        src="assets/img/product/product3.jpg" alt=""></a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" data-bs-toggle="tab" href="#tab4" role="tab"
+                                                    aria-controls="tab4" aria-selected="false"><img
+                                                        src="assets/img/product/product8.jpg" alt=""></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-12">
+                                <div class="modal_right">
+                                    <div class="modal_title mb-10">
+                                        <h2>Donec Ac Tempus</h2>
+                                    </div>
+                                    <div class="modal_price mb-10">
+                                        <span class="new_price">$64.99</span>
+                                        <span class="old_price">$78.99</span>
+                                    </div>
+                                    <div class="modal_description mb-15">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste
+                                            laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam
+                                            in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam, rerum vel
+                                            recusandae </p>
+                                    </div>
+                                    <div class="variants_selects">
+                                        <div class="variants_size">
+                                            <h2>size</h2>
+                                            <select class="select_option">
+                                                <option selected value="1">s</option>
+                                                <option value="1">m</option>
+                                                <option value="1">l</option>
+                                                <option value="1">xl</option>
+                                                <option value="1">xxl</option>
+                                            </select>
+                                        </div>
+                                        <div class="variants_color">
+                                            <h2>color</h2>
+                                            <select class="select_option">
+                                                <option selected value="1">purple</option>
+                                                <option value="1">violet</option>
+                                                <option value="1">black</option>
+                                                <option value="1">pink</option>
+                                                <option value="1">orange</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal_add_to_cart">
+                                            <form action="#">
+                                                <input min="1" max="100" step="2" value="1" type="number">
+                                                <button type="submit">add to cart</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal_social">
+                                        <h2>Share this product</h2>
+                                        <ul>
+                                            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                            <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- modal area end-->
+
+
+
+    <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="/static/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="/static/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="/static/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="/static/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="/static/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="/static/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="/static/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="/static/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="/static/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#subscribe-form').on('submit', function(event) {
+        event.preventDefault();
+        const email = $('#mc-email').val();
+        
+        $.ajax({
+            url: '/subscription',
+            type: 'POST',
+            data: { email: email },
+            success: function(response) {
+            if (response.status === 'success') {
+                $('#subscriptionAlert').show().addClass('show');
+                setTimeout(function() {
+                $('#subscriptionAlert').alert('close');
+                }, 5000); // Alert disappears after 5 seconds
+            } else {
+                alert('Subscription failed: ' + response.message);
+            }
+            },
+            error: function() {
+            alert('An error occurred. Please try again.');
+            }
+        });
+        });
+    });
+    </script>
+
+
+
+</body>
+
+</html>

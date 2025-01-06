@@ -1,0 +1,650 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green Kaufen </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/greenkaufen_logo.png') }}">
+
+
+    <!-- CSS 
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!--slick min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!--magnific popup min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!--font awesome css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.awesome.css') }}">
+    <!--animate css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!--jquery ui min css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
+    <!--slinky menu css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slinky.menu.css') }}">
+    <!--plugins css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!--modernizr min js here-->
+    <script src="/static/js/modernizr-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--header area start-->
+
+    <!--offcanvas menu area start-->
+    <div class="off_canvars_overlay">
+
+    </div>
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="icon-menu"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="icon-x"></i></a>
+                        </div>
+                        <div class="welcome-text">
+                            <p>Free Delivery: Take advantage of our time to save event</p>
+                        </div>
+                        <div class="language_currency text-center">
+                            <ul>
+                                <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown_language">
+                                        <li><a href="#">Deutsch</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            <form action="#">
+                                <div class="search_box">
+                                    <input placeholder="Search product..." type="text">
+                                    <button type="submit"><i class="icon-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="call-support">
+                            <p>Call Support: <a href="tel:0123456789">0123456789</a></p>
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a href="#">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home 1</a></li>
+                                        <li><a href="index-2.html">Home 2</a></li>
+                                        <li><a href="index-3.html">Home 3</a></li>
+                                        <li><a href="index-4.html">Home 4</a></li>
+                                        <li><a href="index-5.html">Home 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Shop</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Shop Layouts</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="shop.html">shop</a></li>
+                                                <li><a href="shop-fullwidth.html">Full Width</a></li>
+                                                <li><a href="shop-fullwidth-list.html">Full Width list</a></li>
+                                                <li><a href="shop-right-sidebar.html">Right Sidebar </a></li>
+                                                <li><a href="shop-right-sidebar-list.html"> Right Sidebar list</a></li>
+                                                <li><a href="shop-list.html">List View</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">other Pages</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="cart.html">cart</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="my-account.html">my account</a></li>
+                                                <li><a href="404.html">Error 404</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Product Types</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="product-details.html">product details</a></li>
+                                                <li><a href="product-sidebar.html">product sidebar</a></li>
+                                                <li><a href="product-grouped.html">product grouped</a></li>
+                                                <li><a href="variable-product.html">product variable</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">blog</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">blog</a></li>
+                                        <li><a href="blog-details.html">blog details</a></li>
+                                        <li><a href="blog-fullwidth.html">blog fullwidth</a></li>
+                                        <li><a href="blog-sidebar.html">blog sidebar</a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">pages </a>
+                                    <ul class="sub-menu">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="services.html">services</a></li>
+                                        <li><a href="faq.html">Frequently Questions</a></li>
+                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="login.html">login</a></li>
+                                        <li><a href="404.html">Error 404</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="my-account.html">my account</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="about.html">about Us</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="contact.html"> Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> demo@example.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--offcanvas menu area end-->
+    <header>
+        <div class="main_header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-5">
+                            
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="welcome-text">
+                                <p><span style="color: orangered;">Free Delivery on orders above</span> <span style="color: orangered;">€25</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="language_currency text-right">
+                                <ul>
+                                    
+                                    <li class="language"><a href="#"> English <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown_language">
+                                            <li><a href="#">Deutsch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-6">
+                            <div class="header_right_info">
+                                <div class="search_container">
+                                    <form action="#">
+                                        
+                                        <div class="search_box">
+                                            <input placeholder="Search product..." type="text">
+                                            <button type="submit"><i class="icon-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="header_account_area">
+                                    <div class="header_account-list top_links">
+                                        <a href="#"><i class="icon-users"></i></a>
+                                        <ul class="dropdown_links">
+                                            <li><a href="checkout.html">Checkout </a></li>
+                                            <li><a href="my-account.html">My Account </a></li>
+                                            <li><a href="cart.html">Shopping Cart</a></li>
+                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header_account-list header_wishlist">
+                                        <a href="wishlist.html"><i class="icon-heart"></i></a>
+                                    </div>
+                                    <div class="header_account-list  mini_cart_wrapper">
+                                        <a href="javascript:void(0)"><i class="icon-shopping-bag"></i><span
+                                                class="item_count">2</span></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            
+                        </div>
+                        <div class="col-lg-6">
+                            <!--main menu start-->
+                            <div class="main_menu menu_position">
+                                <nav>
+                                    <ul>
+                                        <li><a class="" href="/">home</a>
+                                        </li>
+                                        <li><a href="/shop?item=all">Shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="/shop?item=all">All Products</a></li>
+                                                <li><a href="/shop?item=palm">Palm Leaf</a></li>
+                                                <li><a href="/shop?item=sugar">Sugarcane</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="" href="/about">about us</a>
+                                        </li>
+                                        <li><a class="active" href="/blog">blog</a>
+                                           
+                                        </li>
+                                        <li><a href="/contact"> Contact Us</a></li>
+                                        <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--main menu end-->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="call-support">
+                                <p>Call Support: <a href="tel:0123456789">0123456789</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header area end-->
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>Blog</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!--blog body area start-->
+    <div class="blog_details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12">
+                    <!--blog grid area start-->
+                    <div class="blog_wrapper blog_wrapper_details">
+                        <article class="single_blog">
+                            <figure>
+                                <div class="post_header">
+                                    <h3 class="post_title">{{blog_ex.title}}</h3>
+                                    <div class="blog_meta">
+                                        <p>Posted by : {{blog_ex.author}} / On : {{blog_ex.date}} </p>
+                                    </div>
+                                </div>
+                                <div class="blog_thumb">
+                                    <a href="#"><img src="{{blog_ex.image}}" alt=""></a>
+                                </div>
+                                <figcaption class="blog_content">
+                                    <div class="post_content">
+                                        <h2>Introduction</h2>
+                                        <br>
+                                        <p>{{blog_ex.intro}}</p>
+
+                                        <h4>{{blog_ex.sec_1_title}}</h4>
+                                        <p>{{blog_ex.sec_1_info}}</p>
+
+                                        <blockquote>
+                                            <ul>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_1_point_1_head}}  </span>{{blog_ex.sec_1_point_1_info}}</li><br>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_1_point_2_head}}  </span>{{blog_ex.sec_1_point_2_info}}</li><br>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_1_point_3_head}}  </span>{{blog_ex.sec_1_point_3_info}}</li>
+                                            </ul>
+                                        </blockquote>
+
+                                        <h4>{{blog_ex.sec_2_title}}</h4>
+                                        <p>{{blog_ex.sec_2_info}}</p>
+
+                                        <blockquote>
+                                            <ul>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_2_point_1_head}}  </span>{{blog_ex.sec_2_point_1_info}}</li><br>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_2_point_2_head}}  </span>{{blog_ex.sec_2_point_2_info}}</li><br>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_2_point_3_head}}  </span>{{blog_ex.sec_2_point_3_info}}</li>
+                                            </ul>
+                                        </blockquote>
+
+                                        <h4>{{blog_ex.sec_3_title}}</h4>
+                                        <p>{{blog_ex.sec_3_info}}</p>
+
+                                        <blockquote>
+                                            <ul>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_3_point_1_head}}  </span>{{blog_ex.sec_3_point_1_info}}</li><br>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_3_point_2_head}}  </span>{{blog_ex.sec_3_point_2_info}}</li><br>
+                                                <li><span style="font-weight: bold;">{{blog_ex.sec_3_point_3_head}}  </span>{{blog_ex.sec_3_point_3_info}}</li>
+                                            </ul>
+                                        </blockquote>
+                                        
+                                    </div>
+
+                                    <h2>Conclusion</h2>
+                                        <br>
+                                        <p>{{blog_ex.conc}}</p>
+                                        <br>
+                                    <div class="entry_content">
+
+                                        <div class="social_sharing">
+                                            <p>share this post:</p>
+                                            <ul>
+                                                <li><a href="#" title="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#" title="twitter"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#" title="pinterest"><i class="fa fa-pinterest"></i></a>
+                                                </li>
+                                                <li><a href="#" title="google+"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li><a href="#" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        
+                        <div class="comments_form">
+                            <h3>Leave a Reply </h3>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="review_comment">Comment </label>
+                                        <textarea name="comment" id="review_comment"></textarea>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <label for="author">Name</label>
+                                        <input id="author" type="text">
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <label for="email">Email </label>
+                                        <input id="email" type="text">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <label for="website">Website </label>
+                                        <input id="website" type="text">
+                                    </div>
+                                </div>
+                                <button class="button" type="submit">Post Comment</button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!--blog grid area start-->
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="blog_sidebar_widget">
+                        <div class="widget_list widget_search">
+                            <div class="widget_title">
+                                <h3>Search</h3>
+                            </div>
+                            <form action="#">
+                                <input placeholder="Search..." type="text">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                       
+                        <div class="widget_list widget_post">
+                            <div class="widget_title">
+                                <h3>Recent Posts</h3>
+                            </div>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog12.jpg" alt=""></a>
+                                </div>
+                                <div class="post_info">
+                                    <h4><a href="blog-details.html">Blog image post</a></h4>
+                                    <span>March 16, 2018 </span>
+                                </div>
+                            </div>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog13.jpg" alt=""></a>
+                                </div>
+                                <div class="post_info">
+                                    <h4><a href="blog-details.html">Post with Gallery</a></h4>
+                                    <span>March 16, 2018 </span>
+                                </div>
+                            </div>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog14.jpg" alt=""></a>
+                                </div>
+                                <div class="post_info">
+                                    <h4><a href="blog-details.html">Post with Audio</a></h4>
+                                    <span>March 16, 2018 </span>
+                                </div>
+                            </div>
+                            <div class="post_wrapper">
+                                <div class="post_thumb">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog15.jpg" alt=""></a>
+                                </div>
+                                <div class="post_info">
+                                    <h4><a href="blog-details.html">Post with Video</a></h4>
+                                    <span>March 16, 2018 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget_list widget_categories">
+                            <div class="widget_title">
+                                <h3>Categories</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Audio</a></li>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Image</a></li>
+                                <li><a href="#">Other</a></li>
+                                <li><a href="#">Travel</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget_list widget_tag">
+                            <div class="widget_title">
+                                <h3>Tag products</h3>
+                            </div>
+                            <div class="tag_widget">
+                                <ul>
+                                    <li><a href="#">asian</a></li>
+                                    <li><a href="#">brown</a></li>
+                                    <li><a href="#">euro</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--blog section area end-->
+
+    
+
+    <!--footer area start-->
+    <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container contact_us">
+                            <h3>Address</h3>
+                            <p><span>GreenKaufen</span> GmbH, Hennef <span> <br>53773,</span> Germany</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Information</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/bulkenquiry">Bulk Enquiry</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="widgets_container widget_app">
+                            <div class="footer_logo">
+                                <a href="/"><img src="static/img/logo/greenkaufen_logo.png" alt=""></a>
+                            </div>
+                            
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100090579331886"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/greenkaufen/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/91609196/admin/feed/posts/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                            <div class="footer_app">
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/icon/icon-app.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/icon/icon1-app.jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>My Account</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/myaccount">My Account</a></li>
+                                    <li><a href="/cart">Shopping cart</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                    <li><a href="/shop?item=all">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="widgets_container widget_menu">
+                            <h3>Customer Service</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/faq">FAQ</a></li>
+                                    <li><a href="/terms">Terms and Conditions</a></li>
+                                    <li><a href="/privacy">Disclaimer & Privacy</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="/impressum">Impressum</a></li>
+                                    <li><a href="#">Shipping Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p class="copyright-text">&copy; 2024 <a href="/">Green Kaufen</a>. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_payment">
+                            <a href="#"><img src="assets/img/icon/payment.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer area end-->
+
+
+     <!-- JS
+============================================ -->
+    <!--jquery min js-->
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="/static/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="/static/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="/static/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="/static/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="/static/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="/static/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="/static/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="/static/js/slinky.menu.js"></script>
+    <!-- Plugins JS -->
+    <script src="/static/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="/static/js/main.js"></script>
+
+
+
+</body>
+
+</html>
