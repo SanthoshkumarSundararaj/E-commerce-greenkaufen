@@ -26,19 +26,75 @@
 
 ## 📂 Project Structure
 ```plaintext
-greenkaufen/
-├── app/
-│   ├── static/         # CSS, JS, Images
-│   ├── templates/      # HTML Templates
-│   ├── routes.py       # Application routes
-│   ├── models.py       # Database models
-│   ├── forms.py        # Flask-WTF forms
-│   ├── __init__.py     # App factory
-│
-├── config.py           # Configuration settings
-├── requirements.txt    # Python dependencies
-├── run.py              # Run the application
-├── README.md           # Project documentation
+Directory structure:
+└── SanthoshkumarSundararaj-E-commerce-greenkaufen/
+    ├── README.md
+    ├── Dockerfile
+    ├── app.py
+    ├── babel.cfg
+    ├── blog.json
+    ├── config.py
+    ├── database.py
+    ├── exclusive_products.json
+    ├── firebase_helper.py
+    ├── forms.py
+    ├── messages.pot
+    ├── models.py
+    ├── products.json
+    ├── requirements.txt
+    ├── serviceAccountKey.json
+    ├── flask_session/
+    │   └── .DS_Store
+    ├── images/
+    ├── instance/
+    │   └── site.db
+    ├── static/
+    │   ├── .DS_Store
+    │   ├── css/
+    │   │   ├── animate.css
+    │   │   ├── font.awesome.css
+    │   │   ├── magnific-popup.css
+    │   │   ├── plugins.css
+    │   │   ├── slick.css
+    │   │   ├── slinky.menu.css
+    │   │   ├── style.css
+    │   │   └── extra/
+    │   │       ├── default.css
+    │   │       └── style.css
+    │   ├── fonts/
+    │   │   
+    │   ├── img/
+    │   │   
+    │   └── js/
+    ├── templates/
+    │   ├── about.html
+    │   ├── blog-details.html
+    │   ├── blog.html
+    │   ├── bulk_enquiry.html
+    │   ├── bulk_thanks.html
+    │   ├── cart.html
+    │   ├── checkout.html
+    │   ├── contact.html
+    │   ├── faq.html
+    │   ├── impressum.html
+    │   ├── index-2.html
+    │   ├── index.html
+    │   ├── login.html
+    │   ├── my-account.html
+    │   ├── privacy.html
+    │   ├── product-details.html
+    │   ├── section.html
+    │   ├── services.html
+    │   ├── shop.html
+    │   ├── terms.html
+    │   ├── wishlist.html
+    │   └── .DS_Store
+    └── translations/
+        └── de/
+            └── LC_MESSAGES/
+                ├── messages.mo
+                └── messages.po
+
 ```
 
 ---
